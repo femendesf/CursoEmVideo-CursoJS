@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa</title>
+    <style>
+        /* Comentario em CSS*/
+        body{
+            background-color: rgb(76, 152, 223);
+            color: white;
+            font: normal 25pt Arial;
+        }
+        h1{
+            color: deeppink;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello World</h1> <!--Assim faz um comentário em HTML-->
+    <p>Ja me livrei da maldição!</p>
+    <script>
+        // Prompt retorna uma string, mesmo digitando um número
+
+        //Pode usar (Number.parseInt) para converter para um numero inteiro ou (Number.parseFloat) para numero real. Apenas Number vai converter para qualquer tipo
+
+        //Para converter de uma String para Number, podemos usar (String()) ou (n.toString())
+
+        var n1 = Number(prompt("Digite um número: ")) // Convertendo a string para number
+        var n2 = Number(prompt("DIgite outro número: "))
+        var s = n1+n2
+        alert(`A soma entre ${n1} e ${n2} é igual a ${s.toString()}`)// Convertendo a soma para String somente para exemplo
+        //alert("A soma dos valores é: " + (n1+n2)): Podemos fazer a soma direto sem precisar armazenar dentro de uma variavel
+
+
+        
+    </script>
+</body>
+</html>

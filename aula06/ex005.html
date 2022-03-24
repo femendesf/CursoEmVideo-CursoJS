@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body{
+            background-color: rgb(252, 248, 2);
+            color: white;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+    <div id="msg">Clique em mim</div>
+
+    <script>
+        /*
+        Selecionando por id:
+
+        var d = window.document.getElementById("msg")
+        d.style.background = "rgb(255, 0, 234)"
+        d.innerText ="Estou aguardando" // Alterando o texto do div direto pela variavel com o id armazenado. Mensagem original: Clique em mim
+        */
+
+
+        /*Selecionando por name:
+        var d = window.document.getElementsByName("msg")[0]
+        d.innerText = "Olá, Mundo!"*/
+
+
+        //Selecionando por tag:
+        var p1 = window.document.getElementsByTagName("p")[0]//Variavel que vai armanezar a tag <p> na posição 0, ou seja, a primeira tag <p>
+        p1.style.color = "black" // Mudando a cor da tag <p> que foi armanezada em p1
+        
+        //Quando vai selecionar por id pode usar getElementById ou querySelector
+
+        var d = window.document.querySelector('div#msg') // TODA DIV É REPRESENTADA POR UMA HASHTAG (#). TODA CLASSE É REPRESENTADA POR UM PONTO (.)]
+        d.style.background = "rgb(64, 255, 191)"
+        
+
+        var p2 = window.document.getElementsByTagName("p")[1]
+
+        var corpo = window.document.body
+        corpo.style.background = "rgb(2, 139, 252)"
+
+        
+        window.document.write("<br/>Está escrito assim: " + p1.innerText)
+        window.document.write("<br/><br/>innerHTML aparece não só o texto, mas também a formatação: " + p2.innerHTML)
+
+    </script>
+</body>
+</html>
